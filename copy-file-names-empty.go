@@ -13,7 +13,7 @@ func check(e error) {
 }
 
 func main() {
-	fmt.Println("--copy-file-name-empty.go--ver0.0.5")
+	fmt.Println("--copy-file-names-empty.go--ver0.0.5")
 
 	files, _ := filepath.Glob("*.mp4")
 	if len(files) == 0 {
@@ -25,7 +25,7 @@ func main() {
 	for i := range files {
 		path := filepath.Join("CFNE", files[i]);
 		//fmt.Println(files[i])
-		//CFNE = Copy File Name Empty
+		//CFNE = Copy File Names Empty
 		//f, err := os.Create("CFNE\\" + files[i])
 		f, err := os.Create(path)
 		check(err)
